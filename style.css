@@ -5,26 +5,25 @@
 }
 
 body {
-    background: rgb(0,102,178);
-    background: linear-gradient(90deg, rgba(0,102,178,1) 50%, rgba(0,45,98,1) 100%);
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a); /* Fundo escuro */
     padding: 30px 0;
+    font-family: 'Arial', sans-serif;
 }
 
 .calculator {
     width: 400px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 10px;
-    padding: 0px 50px 0px 50px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1); /* Fundo com leve desfoque */
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .calculator-buttons {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
 }
 
 .display {
@@ -33,46 +32,48 @@ body {
     width: 100%;
     height: 100px;
     border-radius: 10px;
-    color: white;
-    font: bold 4rem sans-serif;
+    color: #ffffff; /* Texto em branco */
+    font: bold 3rem 'Arial', sans-serif;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 20px;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2); /* Cinza claro */
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 }
 
 .calculator button {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15); /* Botões em cinza escuro */
+    backdrop-filter: blur(15px);
     border-radius: 10px;
-    color: white;
+    color: #ffffff; /* Texto em branco */
     padding: 20px;
     border: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    transition: background 0.3s, transform 0.2s;
     outline: none;
     cursor: pointer;
 }
 
 button:hover {
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: rgba(0, 122, 255, 0.7); /* Azul claro ao passar o mouse */
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
 }
 
 .footer {
     color: rgba(255, 255, 255, 0.7);
-    font: normal 1rem sans-serif;
+    font: normal 1rem 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     padding: 20px;
 }
 
 .titulo {
-    color: rgba(255, 255, 255, 0.7);
-    font: bold 2rem sans-serif;
+    color: #ffffff; /* Título em branco */
+    font: bold 2.5rem 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     padding: 20px;
